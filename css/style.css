@@ -11,8 +11,53 @@
   font-family: "Syne-Regular";
   src: url("../font/Syne/Syne-Regular.ttf") format("truetype");
 }
+.menu__breadcrumb {
+  height: 360px;
+  background-image: url("../img/png/bredcrumb.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.menu__breadcrumb .menu__area {
+  height: 88px;
+  border-bottom: 1px solid white;
+  opacity: 0.2;
+}
+.menu__breadcrumb .breadcrumb__area {
+  height: 272px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__breadcrumb .breadcrumb__area .breadcrumb {
+  background: transparent;
+}
+.menu__breadcrumb .breadcrumb__area .breadcrumb__title {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: "Syne-Bold", sans-serif;
+  font-size: 64px;
+  line-height: 72px;
+}
+.menu__breadcrumb .breadcrumb__area .breadcrumb__item {
+  width: 100%;
+  text-align: center;
+  font-family: "Syne-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #97F793;
+}
+.menu__breadcrumb .breadcrumb__area .breadcrumb__item a {
+  color: #fff;
+}
+.menu__breadcrumb .breadcrumb__area .breadcrumb ul {
+  list-style: none;
+}
+.menu__breadcrumb .breadcrumb__area .breadcrumb ul li a {
+  color: #fff;
+}
+
 .footer {
-  border: 1px solid red;
   min-height: 554px;
   background: #1A1D27;
   padding: 110px 0;

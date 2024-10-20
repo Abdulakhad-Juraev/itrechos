@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 // VARIABLES
 
 $bbb: 1px solid red;
@@ -18,8 +19,68 @@ $font-bold: 'Syne-Bold', sans-serif;
   src: url('../font/Syne/Syne-Regular.ttf') format('truetype');
 }
 
+//<!--Navbar with Breadcrumb START!-->
+.menu__breadcrumb {
+  height: 360px;
+  background-image: url("../img/png/bredcrumb.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  .menu__area {
+    height: 88px;
+    border-bottom: 1px solid white;
+    opacity: .2;
+  }
+
+  .breadcrumb__area {
+    height: 272px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .breadcrumb {
+      background: transparent;
+
+      &__title {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-family: $font-bold;
+        font-size: 64px;
+        line-height: 72px;
+      }
+
+      &__item {
+        width: 100%;
+        text-align: center;
+        font-family: $font-bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #97F793;
+
+        a {
+          color: #fff;
+        }
+      }
+
+      ul {
+          list-style: none;
+        li {
+          a {
+            color: #fff;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+//<!--Navbar END!-->
+
+
+//<!--FOOTER START!-->
 .footer {
-  border: $bbb;
   min-height: 554px;
   background: #1A1D27;
   padding: 110px 0;
@@ -106,3 +167,5 @@ $font-bold: 'Syne-Bold', sans-serif;
   }
 
 }
+
+//<!--FOOTER END!-->
