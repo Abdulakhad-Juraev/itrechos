@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Syne-Bold";
+  src: url("../font/Syne/Syne-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Syne-Regular";
+  src: url("../font/Syne/Syne-Regular.ttf") format("truetype");
+}
+.footer {
+  height: 554px;
+  background: #1A1D27;
+  padding: 110px 0;
+  color: #ECEEF2;
+}
+.footer .menu__title {
+  font-family: "Syne-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.footer .menu__title-logo {
+  margin-top: 20px;
+}
+.footer .menu ul li {
+  list-style: none;
+}
+.footer .menu ul li a {
+  line-height: 2.3;
+  font-family: "Syne-Regular", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+.footer .menu ul li a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+.footer__bottom {
+  display: flex;
+  margin-top: 80px;
+}
+.footer__bottom .social__link a {
+  margin: 0 8px;
+}
+.footer__bottom .social__link a:first-child {
+  margin: 0;
+}
+.footer__bottom .legal__link {
+  margin-left: 50px;
+}
+.footer__bottom .legal__link a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.7;
+  margin-right: 10px;
+  font-family: "Syne-Regular", sans-serif;
+  transition: all 0.2s;
+}
+.footer__bottom .legal__link a:hover {
+  opacity: 1;
+}
+.footer .copyright {
+  margin-top: 80px;
+  font-family: "Syne-Regular", sans-serif;
+  text-align: center;
+  opacity: 0.7;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.footer .copyright:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
