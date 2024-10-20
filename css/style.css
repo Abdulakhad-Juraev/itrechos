@@ -57,6 +57,22 @@
   color: #fff;
 }
 
+.contact_country {
+  padding: 100px 0;
+}
+.contact_country .menu .menu__title {
+  font-size: 44px;
+  line-height: 54px;
+  color: #1A1D27;
+  font-family: "Syne-Bold", sans-serif;
+}
+.contact_country .menu ul li {
+  list-style: none;
+  font-family: "Syne-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .footer {
   min-height: 554px;
   background: #1A1D27;
