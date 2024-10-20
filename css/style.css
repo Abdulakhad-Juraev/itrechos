@@ -12,7 +12,8 @@
   src: url("../font/Syne/Syne-Regular.ttf") format("truetype");
 }
 .footer {
-  height: 554px;
+  border: 1px solid red;
+  min-height: 554px;
   background: #1A1D27;
   padding: 110px 0;
   color: #ECEEF2;

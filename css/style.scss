@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+// VARIABLES
 
 $bbb: 1px solid red;
 $font-regular: 'Syne-Regular', sans-serif;
@@ -18,7 +19,8 @@ $font-bold: 'Syne-Bold', sans-serif;
 }
 
 .footer {
-  height: 554px;
+  border: $bbb;
+  min-height: 554px;
   background: #1A1D27;
   padding: 110px 0;
   color: #ECEEF2;
