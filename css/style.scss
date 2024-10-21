@@ -8,6 +8,7 @@
 $bbb: 1px solid red;
 $font-regular: 'Syne-Regular', sans-serif;
 $font-bold: 'Syne-Bold', sans-serif;
+$font-medium: 'Syne-Medium', sans-serif;
 
 @font-face {
   font-family: 'Syne-Bold';
@@ -17,6 +18,11 @@ $font-bold: 'Syne-Bold', sans-serif;
 @font-face {
   font-family: 'Syne-Regular';
   src: url('../font/Syne/Syne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Syne-Medium';
+  src: url('../font/Syne/Syne-Medium.ttf') format('truetype');
 }
 
 //<!--Navbar with Breadcrumb START!-->
@@ -81,19 +87,89 @@ $font-bold: 'Syne-Bold', sans-serif;
 //<!--CONTACT_COUNTRY START!-->
 .contact_country {
   padding: 100px 0;
-  .menu {
-    .menu__title {
-      font-size: 44px;
-      line-height: 54px;
-      color: #1A1D27;
-      font-family: $font-bold;
+
+  .row__country {
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 100px;
+
+    .menu {
+      .menu__title {
+        font-size: 44px;
+        line-height: 54px;
+        color: #1A1D27;
+        font-family: $font-bold;
+      }
+
+      ul {
+        li {
+          list-style: none;
+          font-family: $font-regular;
+          font-size: 16px;
+          line-height: 24px;
+          cursor: pointer;
+
+          a {
+            color: #1A1D27;
+            text-decoration: none;
+          }
+        }
+      }
     }
-    ul{
-      li{
-        list-style: none;
-        font-family: $font-regular;
-        font-size: 16px;
-        line-height: 24px;
+  }
+
+  .row__map-area {
+    border-left: 2px solid #ccc;
+    //border-top: 2px solid #ccc;
+    //padding: 75px 0 100px 50px;
+
+    .contact__map {
+      //width: 636px;
+      //height: 524px;
+      border: 1px solid red;
+    }
+
+    .contact__form {
+      .contact__form-title {
+        font-size: 44px;
+        line-height: 54px;
+        font-family: $font-bold;
+      }
+
+      input {
+        width: 526px;
+        height: 56px;
+        border: 1px solid rgba(26, 29, 39, 0.4);
+        padding: 16px;
+        background: #fff;
+        &::placeholder {
+        }
+      }
+
+      textarea {
+        border: 1px solid rgba(26, 29, 39, 0.4);
+        padding: 16px;
+        width: 526px;
+        height: 160px;
+      }
+
+      input[type='submit'] {
+        background: #1a1d27;
+        font-family: $font-medium;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 107%;
+        letter-spacing: 0.07em;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: all .3s;
+
+        &:hover {
+          background: #fff;
+          color: #1a1d27;
+        }
       }
     }
   }

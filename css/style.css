@@ -11,6 +11,10 @@
   font-family: "Syne-Regular";
   src: url("../font/Syne/Syne-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Syne-Medium";
+  src: url("../font/Syne/Syne-Medium.ttf") format("truetype");
+}
 .menu__breadcrumb {
   height: 360px;
   background-image: url("../img/png/bredcrumb.png");
@@ -60,17 +64,68 @@
 .contact_country {
   padding: 100px 0;
 }
-.contact_country .menu .menu__title {
+.contact_country .row__country {
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 100px;
+}
+.contact_country .row__country .menu .menu__title {
   font-size: 44px;
   line-height: 54px;
   color: #1A1D27;
   font-family: "Syne-Bold", sans-serif;
 }
-.contact_country .menu ul li {
+.contact_country .row__country .menu ul li {
   list-style: none;
   font-family: "Syne-Regular", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
+}
+.contact_country .row__country .menu ul li a {
+  color: #1A1D27;
+  text-decoration: none;
+}
+.contact_country .row__map-area {
+  border-left: 2px solid #ccc;
+}
+.contact_country .row__map-area .contact__map {
+  border: 1px solid red;
+}
+.contact_country .row__map-area .contact__form .contact__form-title {
+  font-size: 44px;
+  line-height: 54px;
+  font-family: "Syne-Bold", sans-serif;
+}
+.contact_country .row__map-area .contact__form input {
+  width: 526px;
+  height: 56px;
+  border: 1px solid rgba(26, 29, 39, 0.4);
+  padding: 16px;
+  background: #fff;
+}
+.contact_country .row__map-area .contact__form textarea {
+  border: 1px solid rgba(26, 29, 39, 0.4);
+  padding: 16px;
+  width: 526px;
+  height: 160px;
+}
+.contact_country .row__map-area .contact__form input[type=submit] {
+  background: #1a1d27;
+  font-family: "Syne-Medium", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 107%;
+  letter-spacing: 0.07em;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.contact_country .row__map-area .contact__form input[type=submit]:hover {
+  background: #fff;
+  color: #1a1d27;
 }
 
 .footer {
