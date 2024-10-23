@@ -89,8 +89,8 @@ $font-medium: 'Syne-Medium', sans-serif;
   padding: 100px 0;
 
   .row__country {
-    border-right: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
+    border-right: 2px solid rgba(26, 29, 39, 0.1);
+    border-bottom: 2px solid rgba(26, 29, 39, 0.1);
     padding-bottom: 100px;
     position: relative;
     &-star{
@@ -124,7 +124,7 @@ $font-medium: 'Syne-Medium', sans-serif;
   }
 
   .row__map-area {
-    border-left: 2px solid #ccc;
+    border-left: 2px solid rgba(26, 29, 39, 0.1);
     padding-top:75px;
 
     .contact__map {
@@ -144,12 +144,14 @@ $font-medium: 'Syne-Medium', sans-serif;
         border: 1px solid rgba(26, 29, 39, 0.4);
         padding: 16px;
         background: #fff;
+        font-family: $font-regular;
         &::placeholder {
           font-family: $font-regular;
         }
       }
 
       textarea {
+        font-family: $font-regular;
         border: 1px solid rgba(26, 29, 39, 0.4);
         padding: 16px;
         width: 526px;
