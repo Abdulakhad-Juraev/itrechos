@@ -92,7 +92,12 @@ $font-medium: 'Syne-Medium', sans-serif;
     border-right: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
     padding-bottom: 100px;
-
+    position: relative;
+    &-star{
+      position: absolute;
+      bottom: -16.5px;
+      right: -16.5px;
+    }
     .menu {
       .menu__title {
         font-size: 44px;
@@ -120,13 +125,10 @@ $font-medium: 'Syne-Medium', sans-serif;
 
   .row__map-area {
     border-left: 2px solid #ccc;
-    //border-top: 2px solid #ccc;
-    //padding: 75px 0 100px 50px;
+    padding-top:75px;
 
     .contact__map {
-      //width: 636px;
-      //height: 524px;
-      border: 1px solid red;
+      height: 100%;
     }
 
     .contact__form {
@@ -143,6 +145,7 @@ $font-medium: 'Syne-Medium', sans-serif;
         padding: 16px;
         background: #fff;
         &::placeholder {
+          font-family: $font-regular;
         }
       }
 
@@ -150,7 +153,14 @@ $font-medium: 'Syne-Medium', sans-serif;
         border: 1px solid rgba(26, 29, 39, 0.4);
         padding: 16px;
         width: 526px;
+        max-width: 526px;
         height: 160px;
+        min-height: 56px;
+        max-height: 260px;
+
+        &::placeholder {
+          font-family: $font-regular;
+        }
       }
 
       input[type='submit'] {

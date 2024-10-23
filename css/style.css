@@ -68,6 +68,12 @@
   border-right: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
   padding-bottom: 100px;
+  position: relative;
+}
+.contact_country .row__country-star {
+  position: absolute;
+  bottom: -16.5px;
+  right: -16.5px;
 }
 .contact_country .row__country .menu .menu__title {
   font-size: 44px;
@@ -88,9 +94,10 @@
 }
 .contact_country .row__map-area {
   border-left: 2px solid #ccc;
+  padding-top: 75px;
 }
 .contact_country .row__map-area .contact__map {
-  border: 1px solid red;
+  height: 100%;
 }
 .contact_country .row__map-area .contact__form .contact__form-title {
   font-size: 44px;
@@ -104,11 +111,20 @@
   padding: 16px;
   background: #fff;
 }
+.contact_country .row__map-area .contact__form input::placeholder {
+  font-family: "Syne-Regular", sans-serif;
+}
 .contact_country .row__map-area .contact__form textarea {
   border: 1px solid rgba(26, 29, 39, 0.4);
   padding: 16px;
   width: 526px;
+  max-width: 526px;
   height: 160px;
+  min-height: 56px;
+  max-height: 260px;
+}
+.contact_country .row__map-area .contact__form textarea::placeholder {
+  font-family: "Syne-Regular", sans-serif;
 }
 .contact_country .row__map-area .contact__form input[type=submit] {
   background: #1a1d27;
