@@ -4,6 +4,10 @@
 }
 
 @font-face {
+  font-family: "Syne-Extra-Bold";
+  src: url("../font/Syne/Syne-ExtraBold.ttf") format("truetype");
+}
+@font-face {
   font-family: "Syne-Bold";
   src: url("../font/Syne/Syne-Bold.ttf") format("truetype");
 }
@@ -23,8 +27,51 @@
 }
 .menu__breadcrumb .menu__area {
   height: 88px;
-  border-bottom: 1px solid white;
-  opacity: 0.2;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.menu__breadcrumb .menu__area .menu {
+  height: 88px;
+}
+.menu__breadcrumb .menu__area .menu .navbar {
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  line-height: 3.6;
+}
+.menu__breadcrumb .menu__area .menu .navbar-brand {
+  color: white;
+  font-family: "Syne-Extra-Bold", sans-serif;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
+.menu__breadcrumb .menu__area .menu .navbar-collapse {
+  justify-content: end;
+}
+.menu__breadcrumb .menu__area .menu .navbar-collapse .navbar-nav .nav-item:not(:last-child) {
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+.menu__breadcrumb .menu__area .menu .navbar-collapse .navbar-nav .nav-item:not(:last-child) .nav-link {
+  font-family: "Syne-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: white;
+  transition: all 0.3s;
+}
+.menu__breadcrumb .menu__area .menu .navbar-collapse .navbar-nav .nav-item:not(:last-child) .nav-link:hover {
+  color: #97F793;
+}
+.menu__breadcrumb .menu__area .menu .navbar-collapse .navbar-nav .nav-item__contact {
+  margin-left: 20px;
+}
+.menu__breadcrumb .menu__area .menu .navbar-collapse .navbar-nav .nav-item__contact .nav-link {
+  font-family: "Syne-Bold", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 144%;
+  color: #fff;
 }
 .menu__breadcrumb .breadcrumb__area {
   height: 272px;
@@ -59,6 +106,74 @@
 }
 .menu__breadcrumb .breadcrumb__area .breadcrumb ul li a {
   color: #fff;
+}
+
+.section_team .employee {
+  cursor: pointer;
+  position: relative;
+}
+.section_team .employee .employee__contact {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 32px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.section_team .employee .social {
+  width: 32px;
+  height: 32px;
+  background: #1A1D27;
+  border: 1px solid #1A1D27;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section_team .employee .social:not(:first-child):not(:last-child) {
+  margin: 10px 0;
+}
+.section_team .employee:hover .employee__contact {
+  opacity: 1;
+}
+.section_team .employee .employee__image {
+  width: 100%;
+}
+.section_team .employee .employee__name {
+  margin-top: 20px;
+  font-family: "Syne-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1A1D27;
+  margin-bottom: 0;
+}
+.section_team .employee .employee__position {
+  font-family: "Syne-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(26, 29, 39, 0.6);
+}
+.section_team .join_us {
+  background: #97F793;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 16px;
+  height: 120px;
+  padding: 0 50px;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  line-height: 120px;
+}
+.section_team .join_us .join_us-title {
+  font-family: "Syne-Bold", sans-serif;
+  font-size: 32px;
+}
+.section_team .join_us .join_us-link {
+  text-decoration: none;
+  font-family: "Syne-Medium", sans-serif;
+  font-size: 15px;
+  color: #1A1D27;
+  letter-spacing: 1px;
 }
 
 .contact_country {
@@ -104,10 +219,14 @@
   line-height: 54px;
   font-family: "Syne-Bold", sans-serif;
 }
+.contact_country .row__map-area .contact__form .form-group {
+  margin-bottom: 0;
+}
 .contact_country .row__map-area .contact__form input {
   width: 526px;
   height: 56px;
   border: 1px solid rgba(26, 29, 39, 0.4);
+  border-radius: 0;
   padding: 16px;
   background: #fff;
   font-family: "Syne-Regular", sans-serif;
@@ -116,6 +235,7 @@
   font-family: "Syne-Regular", sans-serif;
 }
 .contact_country .row__map-area .contact__form textarea {
+  border-radius: 0;
   font-family: "Syne-Regular", sans-serif;
   border: 1px solid rgba(26, 29, 39, 0.4);
   padding: 16px;

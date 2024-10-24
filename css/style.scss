@@ -6,9 +6,17 @@
 // VARIABLES
 
 $bbb: 1px solid red;
-$font-regular: 'Syne-Regular', sans-serif;
+$font-extra-bold: 'Syne-Extra-Bold', sans-serif;
 $font-bold: 'Syne-Bold', sans-serif;
 $font-medium: 'Syne-Medium', sans-serif;
+$font-regular: 'Syne-Regular', sans-serif;
+
+$color-black: #1A1D27;
+
+@font-face {
+  font-family: 'Syne-Extra-Bold';
+  src: url('../font/Syne/Syne-ExtraBold.ttf') format('truetype');
+}
 
 @font-face {
   font-family: 'Syne-Bold';
@@ -34,8 +42,62 @@ $font-medium: 'Syne-Medium', sans-serif;
 
   .menu__area {
     height: 88px;
-    border-bottom: 1px solid white;
-    opacity: .2;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    //z-index: 3;
+    .menu {
+      height: 88px;
+
+      .navbar {
+        padding: 0;
+        position: relative;
+        z-index: 2;
+        line-height: 3.6;
+
+        &-brand {
+          color: white;
+          font-family: $font-extra-bold;
+          font-size: 24px;
+          padding: 0;
+          margin: 0;
+        }
+
+        &-collapse {
+          justify-content: end;
+
+          .navbar-nav {
+            .nav-item:not(:last-child) {
+              margin: 0 20px;
+              text-transform: uppercase;
+
+              .nav-link {
+                font-family: $font-regular;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: center;
+                color: white;
+                transition: all 0.3s;
+
+                &:hover {
+                  color: #97F793;
+                }
+              }
+            }
+
+            .nav-item__contact {
+              margin-left: 20px;
+
+              .nav-link {
+                font-family: $font-bold;
+                font-size: 18px;
+                text-align: center;
+                line-height: 144%;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   .breadcrumb__area {
@@ -83,6 +145,85 @@ $font-medium: 'Syne-Medium', sans-serif;
   }
 }
 
+.section_team {
+  .employee {
+    cursor: pointer;
+    position: relative;
+
+    .employee__contact {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      width: 32px;
+      opacity: 0;
+      transition: all .3s;
+    }
+
+    .social {
+      width: 32px;
+      height: 32px;
+      background: $color-black;
+      border: 1px solid $color-black;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social:not(:first-child):not(:last-child) {
+      margin: 10px 0;
+    }
+
+    &:hover .employee__contact {
+      opacity: 1;
+    }
+
+    .employee__image {
+      width: 100%;
+    }
+
+    .employee__name {
+      margin-top: 20px;
+      font-family: $font-bold;
+      font-size: 24px;
+      line-height: 28px;
+      color: #1A1D27;
+      margin-bottom: 0;
+    }
+
+    .employee__position {
+      font-family: $font-regular;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(26, 29, 39, 0.6);
+    }
+  }
+
+  .join_us {
+    background: #97F793;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+    height: 120px;
+    padding: 0 50px;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    line-height: 120px;
+
+    .join_us-title {
+      font-family: $font-bold;
+      font-size: 32px;
+    }
+    .join_us-link{
+      text-decoration: none;
+      font-family:$font-medium;
+      font-size: 15px;
+      color: $color-black;
+      letter-spacing: 1px;
+    }
+  }
+}
+
 //<!--Navbar END!-->
 //<!--CONTACT_COUNTRY START!-->
 .contact_country {
@@ -93,11 +234,13 @@ $font-medium: 'Syne-Medium', sans-serif;
     border-bottom: 2px solid rgba(26, 29, 39, 0.1);
     padding-bottom: 100px;
     position: relative;
-    &-star{
+
+    &-star {
       position: absolute;
       bottom: -16.5px;
       right: -16.5px;
     }
+
     .menu {
       .menu__title {
         font-size: 44px;
@@ -125,7 +268,7 @@ $font-medium: 'Syne-Medium', sans-serif;
 
   .row__map-area {
     border-left: 2px solid rgba(26, 29, 39, 0.1);
-    padding-top:75px;
+    padding-top: 75px;
 
     .contact__map {
       height: 100%;
@@ -138,19 +281,26 @@ $font-medium: 'Syne-Medium', sans-serif;
         font-family: $font-bold;
       }
 
+      .form-group {
+        margin-bottom: 0;
+      }
+
       input {
         width: 526px;
         height: 56px;
         border: 1px solid rgba(26, 29, 39, 0.4);
+        border-radius: 0;
         padding: 16px;
         background: #fff;
         font-family: $font-regular;
+
         &::placeholder {
           font-family: $font-regular;
         }
       }
 
       textarea {
+        border-radius: 0;
         font-family: $font-regular;
         border: 1px solid rgba(26, 29, 39, 0.4);
         padding: 16px;
