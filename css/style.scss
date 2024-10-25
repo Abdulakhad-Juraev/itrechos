@@ -34,6 +34,186 @@ $color-black: #1A1D27;
 }
 
 //<!--Navbar with Breadcrumb START!-->
+.menu__header {
+  height: 88px;
+  background-color: #4934DB;
+
+  .menu__area {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    .menu {
+      .navbar {
+        padding: 0;
+        position: relative;
+        z-index: 2;
+        line-height: 3.6;
+
+        &-brand {
+          color: white;
+          font-family: $font-extra-bold;
+          font-size: 24px;
+          padding: 0;
+          margin: 0;
+        }
+
+        &-collapse {
+          justify-content: end;
+
+          .navbar-nav {
+            .nav-item:not(:last-child) {
+              margin: 0 20px;
+              text-transform: uppercase;
+
+              .nav-link {
+                font-family: $font-regular;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: center;
+                color: white;
+                transition: all 0.3s;
+
+                &:hover {
+                  color: #97F793;
+                }
+              }
+            }
+
+            .nav-item__contact {
+              margin-left: 20px;
+
+              .nav-link {
+                font-family: $font-bold;
+                font-size: 18px;
+                text-align: center;
+                line-height: 144%;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background: #4934DB;
+
+  &__brand-text {
+    display: flex;
+    align-items: center;
+
+    .brand__line {
+      width: 45px;
+      height: 1px;
+      background: #97F793;
+      margin-right: 12px;
+    }
+
+    .brand__text {
+      padding: 0;
+      margin: 0;
+      color: #97F793;
+      font-family: $font-bold;
+      font-size: 24px;
+    }
+  }
+
+  .header__title {
+    margin-top: 24px;
+    color: #fff;
+    font-family: $font-bold;
+    line-height: 104px;
+    font-size: 120px;
+  }
+
+  .header__description {
+    margin-top: 28px;
+    font-family: $font-regular;
+    font-size: 16px;
+    color: rgba(255, 255, 255, .8);
+  }
+
+  .header__button {
+    margin-top: 20px;
+    background: $color-black;
+    font-family: $font-medium;
+    width: 242px;
+    height: 56px;
+    font-size: 15px;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    transition: all .3s;
+
+    &:hover {
+      color: $color-black;
+      background: #fff;
+      border: 1px solid $color-black;
+    }
+  }
+
+  .header__image {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 16px;
+
+    img {
+      width: 100%;
+    }
+
+    .productivity {
+      min-width: 203px;
+      width: 203px;
+      max-width: 600px;
+      height: 134px;
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      border-radius: 10px;
+      background: #97F793;
+      padding: 15px 25px;
+      overflow: hidden;
+
+      .productivity__count {
+        font-family: $font-bold;
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      .productivity__text {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: $font-regular;
+        color: rgba(26, 29, 39, 0.8);
+      }
+    }
+  }
+
+  .row__partners {
+    margin-top: 75px;
+    border-top: 2px solid rgba(255, 255, 255, .3);
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    position: relative;
+
+    .row__partners-logos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .partners-star-icon {
+      position: absolute;
+      top: -15px;
+      left: -15px;
+    }
+  }
+}
+
 .menu__breadcrumb {
   height: 360px;
   background-image: url("../img/png/bredcrumb.png");
@@ -145,6 +325,48 @@ $color-black: #1A1D27;
   }
 }
 
+.section__about {
+  .about__brand-name {
+    color: #E374FF;
+    font-family: $font-bold;
+    font-size: 18px;
+  }
+
+  .about__title {
+    font-size: 64px;
+    font-family: $font-bold;
+    line-height: 72px;
+    color: $color-black;
+  }
+.about__description{
+  font-family: $font-regular;
+  line-height: 24px;
+  color: rgba(26, 29, 39, 0.6);
+}
+  .about__buttons{
+    .about__buttons-more{
+      margin-top: 20px;
+      background: $color-black;
+      font-family: $font-medium;
+      width: 218px;
+      height: 56px;
+      font-size: 15px;
+      border-radius: 0;
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+      transition: all .3s;
+
+      &:hover {
+        color: $color-black;
+        background: #fff;
+        border: 1px solid $color-black;
+      }
+    }
+  }
+}
+
+
 .section_team {
   .employee {
     cursor: pointer;
@@ -214,9 +436,10 @@ $color-black: #1A1D27;
       font-family: $font-bold;
       font-size: 32px;
     }
-    .join_us-link{
+
+    .join_us-link {
       text-decoration: none;
-      font-family:$font-medium;
+      font-family: $font-medium;
       font-size: 15px;
       color: $color-black;
       letter-spacing: 1px;

@@ -19,6 +19,158 @@
   font-family: "Syne-Medium";
   src: url("../font/Syne/Syne-Medium.ttf") format("truetype");
 }
+.menu__header {
+  height: 88px;
+  background-color: #4934DB;
+}
+.menu__header .menu__area {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.menu__header .menu__area .menu .navbar {
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  line-height: 3.6;
+}
+.menu__header .menu__area .menu .navbar-brand {
+  color: white;
+  font-family: "Syne-Extra-Bold", sans-serif;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
+.menu__header .menu__area .menu .navbar-collapse {
+  justify-content: end;
+}
+.menu__header .menu__area .menu .navbar-collapse .navbar-nav .nav-item:not(:last-child) {
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+.menu__header .menu__area .menu .navbar-collapse .navbar-nav .nav-item:not(:last-child) .nav-link {
+  font-family: "Syne-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: white;
+  transition: all 0.3s;
+}
+.menu__header .menu__area .menu .navbar-collapse .navbar-nav .nav-item:not(:last-child) .nav-link:hover {
+  color: #97F793;
+}
+.menu__header .menu__area .menu .navbar-collapse .navbar-nav .nav-item__contact {
+  margin-left: 20px;
+}
+.menu__header .menu__area .menu .navbar-collapse .navbar-nav .nav-item__contact .nav-link {
+  font-family: "Syne-Bold", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 144%;
+  color: #fff;
+}
+
+.header {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background: #4934DB;
+}
+.header__brand-text {
+  display: flex;
+  align-items: center;
+}
+.header__brand-text .brand__line {
+  width: 45px;
+  height: 1px;
+  background: #97F793;
+  margin-right: 12px;
+}
+.header__brand-text .brand__text {
+  padding: 0;
+  margin: 0;
+  color: #97F793;
+  font-family: "Syne-Bold", sans-serif;
+  font-size: 24px;
+}
+.header .header__title {
+  margin-top: 24px;
+  color: #fff;
+  font-family: "Syne-Bold", sans-serif;
+  line-height: 104px;
+  font-size: 120px;
+}
+.header .header__description {
+  margin-top: 28px;
+  font-family: "Syne-Regular", sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.header .header__button {
+  margin-top: 20px;
+  background: #1A1D27;
+  font-family: "Syne-Medium", sans-serif;
+  width: 242px;
+  height: 56px;
+  font-size: 15px;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.header .header__button:hover {
+  color: #1A1D27;
+  background: #fff;
+  border: 1px solid #1A1D27;
+}
+.header .header__image {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  border-radius: 16px;
+}
+.header .header__image img {
+  width: 100%;
+}
+.header .header__image .productivity {
+  min-width: 203px;
+  width: 203px;
+  max-width: 600px;
+  height: 134px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  background: #97F793;
+  padding: 15px 25px;
+  overflow: hidden;
+}
+.header .header__image .productivity .productivity__count {
+  font-family: "Syne-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+}
+.header .header__image .productivity .productivity__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Syne-Regular", sans-serif;
+  color: rgba(26, 29, 39, 0.8);
+}
+.header .row__partners {
+  margin-top: 75px;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+.header .row__partners .row__partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .row__partners .partners-star-icon {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+
 .menu__breadcrumb {
   height: 360px;
   background-image: url("../img/png/bredcrumb.png");
@@ -106,6 +258,41 @@
 }
 .menu__breadcrumb .breadcrumb__area .breadcrumb ul li a {
   color: #fff;
+}
+
+.section__about .about__brand-name {
+  color: #E374FF;
+  font-family: "Syne-Bold", sans-serif;
+  font-size: 18px;
+}
+.section__about .about__title {
+  font-size: 64px;
+  font-family: "Syne-Bold", sans-serif;
+  line-height: 72px;
+  color: #1A1D27;
+}
+.section__about .about__description {
+  font-family: "Syne-Regular", sans-serif;
+  line-height: 24px;
+  color: rgba(26, 29, 39, 0.6);
+}
+.section__about .about__buttons .about__buttons-more {
+  margin-top: 20px;
+  background: #1A1D27;
+  font-family: "Syne-Medium", sans-serif;
+  width: 218px;
+  height: 56px;
+  font-size: 15px;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.section__about .about__buttons .about__buttons-more:hover {
+  color: #1A1D27;
+  background: #fff;
+  border: 1px solid #1A1D27;
 }
 
 .section_team .employee {
