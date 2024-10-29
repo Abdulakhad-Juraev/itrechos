@@ -326,6 +326,45 @@ $color-black: #1A1D27;
 }
 
 .section__about {
+  margin: 100px 0;
+
+  .section__about-experience {
+    display: flex;
+    justify-content: space-between;
+
+    .about-experience {
+      width: 100%;
+      position: relative;
+
+      .about-experience-count {
+        font-family: $font-bold;
+        font-size: 52px;
+        line-height: 46px;
+      }
+
+      .about-experience-text {
+        margin-top: -16px;
+        font-family: $font-bold;
+        font-size: 20px;
+        line-height: 24px;
+        width: 500px;
+      }
+
+      .message {
+        transform: rotate(-90deg);
+        position: absolute;
+        bottom: 210px;
+        left: -200px;
+      }
+    }
+
+    .about-img {
+      display: flex;
+      width: 416px;
+      height: 520px;
+    }
+  }
+
   .about__brand-name {
     color: #E374FF;
     font-family: $font-bold;
@@ -338,14 +377,18 @@ $color-black: #1A1D27;
     line-height: 72px;
     color: $color-black;
   }
-.about__description{
-  font-family: $font-regular;
-  line-height: 24px;
-  color: rgba(26, 29, 39, 0.6);
-}
-  .about__buttons{
-    .about__buttons-more{
-      margin-top: 20px;
+
+  .about__description {
+    font-family: $font-regular;
+    line-height: 24px;
+    color: rgba(26, 29, 39, 0.6);
+  }
+
+  .about__buttons {
+    display: flex;
+    margin-top: 40px;
+
+    .about__buttons-more {
       background: $color-black;
       font-family: $font-medium;
       width: 218px;
@@ -362,10 +405,84 @@ $color-black: #1A1D27;
         background: #fff;
         border: 1px solid $color-black;
       }
+
+
+    }
+
+    .about__buttons-link {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .about__buttons-video {
+      font-family: $font-medium;
+      width: 218px;
+      height: 56px;
+      font-size: 15px;
+      border-radius: 0;
+      text-transform: uppercase;
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .play_text {
+        margin-left: 8px;
+        font-family: $font-medium;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: $color-black;
+      }
     }
   }
 }
 
+.section__counter {
+    display: flex;
+    justify-content: space-between;
+    .row{
+      position: relative;
+      border-right: 2px solid rgba(26, 29, 39, 0.1);
+      border-top: 2px solid rgba(26, 29, 39, 0.1);
+      padding: 30px 0;
+      .about__star-icon{
+        position: absolute;
+        right: -17px;
+        top: -18px;
+      }
+    }
+    .block {
+      .count {
+        font-family: $font-bold;
+        font-size: 44px;
+        line-height: 54px;
+
+        .char {
+          color: #4934DB;
+        }
+      }
+
+      .count:nth-child(2) {
+        .char {
+          color: #97F793;
+        }
+      }
+
+      .count:nth-child(3) {
+        .char {
+          color: #E374FF;
+        }
+      }
+
+      .title {
+        font-family: $font-bold;
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+}
 
 .section_team {
   .employee {
