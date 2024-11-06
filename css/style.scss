@@ -440,48 +440,51 @@ $color-black: #1A1D27;
 }
 
 .section__counter {
-    display: flex;
-    justify-content: space-between;
-    .row{
-      position: relative;
-      border-right: 2px solid rgba(26, 29, 39, 0.1);
-      border-top: 2px solid rgba(26, 29, 39, 0.1);
-      padding: 30px 0;
-      .about__star-icon{
-        position: absolute;
-        right: -17px;
-        top: -18px;
+  display: flex;
+  justify-content: space-between;
+
+  .row {
+    position: relative;
+    border-right: 2px solid rgba(26, 29, 39, 0.1);
+    border-top: 2px solid rgba(26, 29, 39, 0.1);
+    padding: 30px 0;
+
+    .about__star-icon {
+      position: absolute;
+      right: -17px;
+      top: -18px;
+    }
+  }
+
+  .block {
+    .count {
+      font-family: $font-bold;
+      font-size: 44px;
+      line-height: 54px;
+
+      .char {
+        color: #4934DB;
       }
     }
-    .block {
-      .count {
-        font-family: $font-bold;
-        font-size: 44px;
-        line-height: 54px;
 
-        .char {
-          color: #4934DB;
-        }
-      }
-
-      .count:nth-child(2) {
-        .char {
-          color: #97F793;
-        }
-      }
-
-      .count:nth-child(3) {
-        .char {
-          color: #E374FF;
-        }
-      }
-
-      .title {
-        font-family: $font-bold;
-        font-size: 18px;
-        line-height: 26px;
+    .count:nth-child(2) {
+      .char {
+        color: #97F793;
       }
     }
+
+    .count:nth-child(3) {
+      .char {
+        color: #E374FF;
+      }
+    }
+
+    .title {
+      font-family: $font-bold;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
 }
 
 .section_team {
@@ -679,6 +682,24 @@ $color-black: #1A1D27;
 
 //<!--CONTACT_COUNTRY END!-->
 
+.section__service {
+  .service__title {
+    font-family: $font-bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E374FF;
+    text-align: center;
+  }
+
+  .service_sub-title {
+    font-family: $font-bold;
+    font-size: 64px;
+    line-height: 26px;
+    color: #E374FF;
+    text-align: center;
+  }
+
+}
 
 //<!--FOOTER START!-->
 .footer {

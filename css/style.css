@@ -547,6 +547,21 @@
   color: #1a1d27;
 }
 
+.section__service .service__title {
+  font-family: "Syne-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #E374FF;
+  text-align: center;
+}
+.section__service .service_sub-title {
+  font-family: "Syne-Bold", sans-serif;
+  font-size: 64px;
+  line-height: 26px;
+  color: #E374FF;
+  text-align: center;
+}
+
 .footer {
   min-height: 554px;
   background: #1A1D27;
